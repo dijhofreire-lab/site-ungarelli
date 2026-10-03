@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal institucional do Centro Educa Mais Dom Ungarelli">
+  <title>Centro Educa Mais Dom Ungarelli</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container header-main">
+      <a class="brand" href="#">
+        <img src="img/logo.jpeg" alt="Logo CEM Dom Ungarelli">
+        <div>
+          <span>Centro Educa Mais</span>
+          <strong>Dom Ungarelli</strong>
+        </div>
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+      <nav class="nav">
+        <a href="#inicio">Início</a>
+        <a href="#noticias">Notícias</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#eletivas">Eletivas</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#aluno">Área do Aluno</a>
+      </nav>
+    </div>
+
+    <div class="quickbar">
+      <div class="container quick-links">
+        <a href="#aluno">🎓 Área do Aluno</a>
+        <a href="#eventos">📅 Eventos do Dia</a>
+        <a href="#projetos">🚀 Projetos</a>
+        <a href="#noticias">📰 Notícias</a>
+        <a href="#contato">📞 Contato</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="eyebrow">PORTAL ESCOLAR</span>
+          <h1>Informação, aprendizagem e protagonismo estudantil.</h1>
+          <p>
+            Um espaço digital para divulgar as ações do Centro Educa Mais Dom Ungarelli,
+            valorizar nossos estudantes e aproximar escola, família e comunidade.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#noticias">Ver notícias</a>
+            <a class="btn btn-outline" href="#aluno">Área do aluno</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-top">
+            <span>HOJE</span>
+            <span id="dataAtual"></span>
+          </div>
+          <h2>O que acontece na escola?</h2>
+          <p>Confira eventos, projetos, eletivas e as principais informações do dia.</p>
+          <a href="#eventos" class="hero-link">Ver agenda →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quick-access">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">ACESSO RÁPIDO</span>
+            <h2>Encontre o que precisa</h2>
+          </div>
+        </div>
+        <div class="access-grid">
+          <a href="#noticias" class="access-card"><span>📰</span><b>Notícias</b><small>Informações da escola</small></a>
+          <a href="#projetos" class="access-card"><span>🚀</span><b>Projetos</b><small>Conheça nossas iniciativas</small></a>
+          <a href="#eletivas" class="access-card"><span>💡</span><b>Eletivas</b><small>Aprendizagens e experiências</small></a>
+          <a href="#eventos" class="access-card"><span>📅</span><b>Eventos</b><small>Agenda escolar</small></a>
+          <a href="#aluno" class="access-card"><span>🎓</span><b>Aluno</b><small>Envie e acompanhe conteúdos</small></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="noticias" class="section">
+      <div class="container">
+        <div class="section-heading row">
+          <div>
+            <span class="eyebrow">COMUNICAÇÃO</span>
+            <h2>Últimas notícias</h2>
+          </div>
+          <button class="text-button" onclick="document.getElementById('formNoticia').scrollIntoView({behavior:'smooth'})">+ Publicar notícia</button>
+        </div>
+        <div id="noticiasGrid" class="news-grid"></div>
+      </div>
+    </section>
+
+    <section id="projetos" class="section alt">
+      <div class="container">
+        <div class="section-heading row">
+          <div>
+            <span class="eyebrow">PROTAGONISMO</span>
+            <h2>Projetos em destaque</h2>
+          </div>
+          <span class="section-note">Produções da comunidade escolar</span>
+        </div>
+        <div id="projetosGrid" class="project-grid"></div>
+      </div>
+    </section>
+
+    <section id="eletivas" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">ELETIVAS</span>
+          <h2>Conheça nossas eletivas</h2>
+          <p>Espaços para experimentar, criar, pesquisar e desenvolver novas competências.</p>
+        </div>
+        <div class="eletiva-grid">
+          <article class="eletiva-card">
+            <img src="img/comunicacao-da-palavra.jpeg" alt="Eletiva Comunicação da Palavra">
+            <div><span>ELETIVA</span><h3>Comunicação da Palavra</h3><p>Palavras que informam, conectam e transformam.</p></div>
+          </article>
+          <article class="eletiva-card">
+            <img src="img/conhecimento-social-investigativo.jpeg" alt="Eletiva Conhecimento Social Investigativo">
+            <div><span>ELETIVA</span><h3>Conhecimento Social Investigativo</h3><p>Pesquisa, investigação e construção do conhecimento.</p></div>
+          </article>
+          <article class="eletiva-card">
+            <img src="img/game-of-numbers.jpeg" alt="Eletiva Game of Numbers">
+            <div><span>ELETIVA</span><h3>Game of Numbers</h3><p>Matemática, desafios, estratégia e aprendizagem.</p></div>
+          </article>
+          <article class="eletiva-card">
+            <img src="img/razao-em-dobro.jpeg" alt="Eletiva Razão em Dobro">
+            <div><span>ELETIVA</span><h3>Razão em Dobro</h3><p>Filosofia e matemática para pensar e resolver problemas.</p></div>
+          </article>
+          <article class="eletiva-card">
+            <img src="img/vozes-ancestrais.jpeg" alt="Eletiva Vozes Ancestrais">
+            <div><span>ELETIVA</span><h3>Vozes Ancestrais</h3><p>História, cultura, memória e identidade.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="eventos" class="section alt">
+      <div class="container">
+        <div class="section-heading row">
+          <div>
+            <span class="eyebrow">AGENDA</span>
+            <h2>Eventos do dia</h2>
+          </div>
+          <span class="today-pill" id="eventoData"></span>
+        </div>
+        <div id="eventosGrid" class="events-list"></div>
+      </div>
+    </section>
+
+    <section id="aluno" class="section student-section">
+      <div class="container student-grid">
+        <div>
+          <span class="eyebrow">PARTICIPAÇÃO</span>
+          <h2>Área do Aluno</h2>
+          <p>
+            Nesta área, estudantes e responsáveis autorizados podem enviar sugestões,
+            notícias, projetos e eventos para publicação no portal. Nesta versão,
+            os dados ficam salvos no navegador usando <strong>localStorage</strong>.
+          </p>
+          <div class="student-features">
+            <span>✓ Enviar notícias</span>
+            <span>✓ Cadastrar eventos</span>
+            <span>✓ Divulgar projetos</span>
+            <span>✓ Revisão antes da publicação</span>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <div class="tabs">
+            <button class="tab active" data-form="noticia">Nova notícia</button>
+            <button class="tab" data-form="evento">Novo evento</button>
+            <button class="tab" data-form="projeto">Novo projeto</button>
+          </div>
+
+          <form id="formNoticia" class="publish-form active-form">
+            <label>Título <input id="noticiaTitulo" required placeholder="Ex.: Feira de Ciências reúne estudantes"></label>
+            <label>Descrição <textarea id="noticiaDescricao" required placeholder="Escreva um resumo da notícia..."></textarea></label>
+            <label>Autor/turma <input id="noticiaAutor" placeholder="Ex.: Turma 301 - Informática"></label>
+            <button class="btn btn-primary" type="submit">Enviar para publicação</button>
+          </form>
+
+          <form id="formEvento" class="publish-form">
+            <label>Nome do evento <input id="eventoTitulo" required placeholder="Ex.: Reunião de pais"></label>
+            <label>Horário <input id="eventoHorario" type="time" required></label>
+            <label>Local <input id="eventoLocal" placeholder="Ex.: Auditório"></label>
+            <button class="btn btn-primary" type="submit">Adicionar evento</button>
+          </form>
+
+          <form id="formProjeto" class="publish-form">
+            <label>Nome do projeto <input id="projetoTitulo" required placeholder="Ex.: Jornal Digital Escolar"></label>
+            <label>Descrição <textarea id="projetoDescricao" required placeholder="Descreva o projeto..."></textarea></label>
+            <label>Turma/responsável <input id="projetoAutor" placeholder="Ex.: 201 - Informática"></label>
+            <button class="btn btn-primary" type="submit">Enviar projeto</button>
+          </form>
+
+          <p class="form-message" id="formMessage"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="img/logo.jpeg" alt="Logo Dom Ungarelli">
+          <div><strong>Centro Educa Mais</strong><span>Dom Ungarelli</span></div>
+        </div>
+        <p>Portal institucional escolar • Informação, educação e protagonismo.</p>
+      </div>
+      <div>
+        <h3>Acesso rápido</h3>
+        <a href="#noticias">Notícias</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#eletivas">Eletivas</a>
+        <a href="#eventos">Eventos</a>
+      </div>
+      <div>
+        <h3>Área do aluno</h3>
+        <a href="#aluno">Enviar conteúdo</a>
+        <a href="#aluno">Sugerir notícia</a>
+        <a href="#aluno">Cadastrar evento</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="ano"></span> Centro Educa Mais Dom Ungarelli — Portal Escolar</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
